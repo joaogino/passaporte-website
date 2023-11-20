@@ -78,7 +78,7 @@
                 <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="solicitar_passaporte.html">solicitar</a>
+                <a class="nav-link" href="solicitar_passaporte.html">Solicitar</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="agendar.html">Agendar</a>
@@ -127,7 +127,7 @@
 
       <div class="col-md-4" id=data_ado>
         <label for="validationCustom01" class="form-label">Data da consesão da adoção</label>
-        <select name="dia">
+        <select name="dia" class="form-select">
           <option value="">Dia</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -162,7 +162,7 @@
           <option value="31">31</option>
         </select>
         
-        <select name="mes">
+        <select name="mes" class="form-select mt-2">
           <option value="">Mês</option>
           <option value="1">Janeiro</option>
           <option value="2">Fevereiro</option>
@@ -178,7 +178,7 @@
           <option value="12">Dezembro</option>
         </select>
         
-        <select name="ano">
+        <select name="ano" class="form-select mt-2">
           <option value="">Ano</option>
           <option value="2023">2023</option>
           <option value="2022">2022</option>
@@ -195,7 +195,7 @@
 
       <div class="col-md-6">
         <label for="validationCustom01" class="form-label">Escolha o estado</label>
-        <select id="estado" onchange="selecionarEstado(this.value)">
+        <select id="estado" class="form-select" onchange="selecionarEstado(this.value)">
           <option value="">Selecione um estado</option>
           <option value="AC"> Acre </option>
           <option value="AL"> Alagoas </option>
@@ -226,7 +226,7 @@
 
       <div class="col-md-6">
         <label for="validationCustom01" class="form-label">Escolha a cidade</label>
-        <select id="cidade">
+        <select id="cidade" class="form-select">
           <option value="">Selecione um estado primeiro</option>
         </select>  
       </div>
