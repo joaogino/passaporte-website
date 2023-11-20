@@ -47,6 +47,191 @@
         </nav>
     </header>
     <main>
+        <!doctype html>
+<html lang="br" class="h-100" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Passaporte</title>
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+</head>
+  <body class="d-flex flex-column h-100">    
+    <header>
+        <nav class="bg-1 navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../imagens/logo.png" width="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solicitar_passaporte.html">Solicitar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="agendar.html">Agendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consulta.html">Consultar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adocao.html">Agendar</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <form>
+        <h1> Agendar atendimento </h1>
+        <div class="col-md-6">
+        <div class="col-md-4" id=data_ado>
+        <label for="validationCustom01" class="form-label">Data da consesão da adoção</label>
+        <select name="dia">
+          <option value="">Dia</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        
+        <select name="mes">
+          <option value="">Mês</option>
+          <option value="1">Janeiro</option>
+          <option value="2">Fevereiro</option>
+          <option value="3">Março</option>
+          <option value="4">Abril</option>
+          <option value="5">Maio</option>
+          <option value="6">Junho</option>
+          <option value="7">Julho</option>
+          <option value="8">Agosto</option>
+          <option value="9">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12">Dezembro</option>
+        </select>
+        
+        <select name="ano">
+          <option value="">Ano</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+        </select>
+      </div>
+
+        <div class="col-md-6">
+        <label for="capitais">Selecione o lugar de atendimento:</label>
+        <select id="capitais" name="capitais">
+          <option value="brasilia">Brasília - Distrito Federal</option>
+          <option value="rio_branco">Rio Branco - Acre</option>
+          <option value="maceio">Maceió - Alagoas</option>
+          <option value="macapa">Macapá - Amapá</option>
+          <option value="manaus">Manaus - Amazonas</option>
+          <option value="salvador">Salvador - Bahia</option>
+          <option value="fortaleza">Fortaleza - Ceará</option>
+          <option value="vitoria">Vitória - Espírito Santo</option>
+          <option value="goiania">Goiânia - Goiás</option>
+          <option value="sao_luis">São Luís - Maranhão</option>
+          <option value="cuiaba">Cuiabá - Mato Grosso</option>
+          <option value="campo_grande">Campo Grande - Mato Grosso do Sul</option>
+          <option value="belo_horizonte">Belo Horizonte - Minas Gerais</option>
+          <option value="belem">Belém - Pará</option>
+          <option value="joao_pessoa">João Pessoa - Paraíba</option>
+          <option value="curitiba">Curitiba - Paraná</option>
+          <option value="recife">Recife - Pernambuco</option>
+          <option value="teresina">Teresina - Piauí</option>
+          <option value="rio_de_janeiro">Rio de Janeiro - Rio de Janeiro</option>
+          <option value="natal">Natal - Rio Grande do Norte</option>
+          <option value="porto_alegre">Porto Alegre - Rio Grande do Sul</option>
+          <option value="porto_velho">Porto Velho - Rondônia</option>
+          <option value="boa_vista">Boa Vista - Roraima</option>
+          <option value="florianopolis">Florianópolis - Santa Catarina</option>
+          <option value="sao_paulo">São Paulo - São Paulo</option>
+          <option value="aracaju">Aracaju - Sergipe</option>
+          <option value="palmas">Palmas - Tocantins</option>
+        </select>
+        </div>
+        <div class="col-md-6">
+        <label for="horarios">Escolha um horário de atendimento:</label>
+        <select id="horarios" name="horarios">
+          <option value="08:00">08:00</option>
+          <option value="08:30">08:30</option>
+          <option value="09:00">09:00</option>
+          <option value="09:30">09:30</option>
+          <option value="10:00">10:00</option>
+          <option value="10:30">10:30</option>
+          <option value="11:00">11:00</option>
+          <option value="11:30">11:30</option>
+          <option value="12:00">12:00</option>
+          <option value="12:30">12:30</option>
+          <option value="13:00">13:00</option>
+          <option value="13:30">13:30</option>
+          <option value="14:00">14:00</option>
+          <option value="14:30">14:30</option>
+          <option value="15:00">15:00</option>
+          <option value="15:30">15:30</option>
+          <option value="16:00">16:00</option>
+          <option value="16:30">16:30</option>
+          <option value="17:00">17:00</option>
+          <option value="17:30">17:30</option>
+          <option value="18:00">18:00</option>
+          <option value="18:30">18:30</option>
+          <option value="19:00">19:00</option>
+          <option value="19:30">19:30</option>
+          <option value="20:00">20:00</option>
+        </select>
+      
+        </div>
+        <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+
+        </div>
+
+      </form>
        
     </main>
 
