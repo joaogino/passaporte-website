@@ -1,24 +1,15 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.118.2">
-    <title>Passaporte</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <title>Adoção</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
-    <title>Adoção</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-    </script>
-     <script>
+  <script>
       // Dados simulados de cidades por estado (poderiam ser carregados dinamicamente)
       const cidadesPorEstado = {
         "AC": ["Acrelândia","Assis Brasil","Brasiléia","Bujari","Capixaba","Cruzeiro do Sul","Epitaciolândia","Feijó","Jordão","Mâncio Lima","Manoel Urbano","Marechal Thaumaturgo", "Plácido de Castro","Porto Acre","Porto Walter","Rio Branco","Rodrigues Alves", "Santa Rosa do Purus", "Sena Madureira", "Senador Guiomard","Tarauacá","Xapuri"],
@@ -71,208 +62,217 @@
           selectCidade.add(option);
         }
       }
-    </script>
-  </head>
-  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  </script>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
   <header>
-    <!-- Fixed navbar -->
-      <nav class="bg-1 navbar navbar-expand-md navbar-dark fixed-top">
-          <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="imagens/logo.png" width="50"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="adocao.html">adoção</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="solicitar_passaporte.html">Solicitar</a>
+    <nav class="bg-1 navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../imagens/logo.png" width="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
             </li>
-              <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-              </ul>
-              <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
-              </form>
-          </div>
-          </div>
-      </nav>
-      </header>
-  
-    <h1> Adoção internacional </h1>
-    <br>
-    
-    <form class="row g-3 needs-validation" novalidate="">
-      
+            <li class="nav-item">
+                <a class="nav-link" href="solicitar_passaporte.html">solicitar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="agendar.html">Agendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consulta.html">Consultar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="adocao.html">Adoção</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h1> Adoção internacional </h1>
+  <br>
+  <main>
+
+  </main>
+    <form class="row g-3 needs-validation" novalidate=""> 
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label">Pais de destino</label>
+        <input type="text" class="form-control" id="pais" value="" placeholder="Informe o pais" required="">
+      </div>
+      <div class="col-md-12" id="obs">
+        <label for="validationCustom01" class="form-label">Observação</label>
+        <textarea rows="6" cols="50"> </textarea>
+      </div>
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label">Nome do juiz de adoção</label>
+        <input type="text" class="form-control" id="juiz" value="" placeholder="Informe o juiz responsavel" required="">
+      </div>
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label">Vara da infancia e juventude</label>
+        <input type="text" class="form-control" id="vara" value="" placeholder="Informe a vara da infancia e juventude" required="">
+      </div>
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label">Nome da assistente social</label>
+        <input type="text" class="form-control" id="social" value="" placeholder="Informe o nome da assistente social" required="">
+      </div>
+
+      <div class="col-md-4" id=data_ado>
+        <label for="validationCustom01" class="form-label">Data da consesão da adoção</label>
+        <select name="dia">
+          <option value="">Dia</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        
+        <select name="mes">
+          <option value="">Mês</option>
+          <option value="1">Janeiro</option>
+          <option value="2">Fevereiro</option>
+          <option value="3">Março</option>
+          <option value="4">Abril</option>
+          <option value="5">Maio</option>
+          <option value="6">Junho</option>
+          <option value="7">Julho</option>
+          <option value="8">Agosto</option>
+          <option value="9">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12">Dezembro</option>
+        </select>
+        
+        <select name="ano">
+          <option value="">Ano</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">Numero do processo</label>
+        <input type="text" class="form-control" id="processo" value="" placeholder="Informe 0 numero do processo" required="">
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">Escolha o estado</label>
+        <select id="estado" onchange="selecionarEstado(this.value)">
+          <option value="">Selecione um estado</option>
+          <option value="AC"> Acre </option>
+          <option value="AL"> Alagoas </option>
+          <option value="AM"> Amazonas </option>
+          <option value="AP"> Amapa </option>
+          <option value="BA"> Bahia </option>
+          <option value="CE"> Cecife </option>
+          <option value="GO"> Goias </option>
+          <option value="MA"> Manaus </option>
+          <option value="MG"> Minas Gerais </option>
+          <option value="MS"> Mato Grosso do Sul </option>
+          <option value="MT"> Mato Grosso </option>
+          <option value="PA"> Pará </option>
+          <option value="PB"> Paraiba </option>
+          <option value="PE"> Pernambuco </option>
+          <option value="PI"> Piaui </option>
+          <option value="PR"> Parana </option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN"> Rio Grande do Norte </option>
+          <option value="RO"> Roraima </option>
+          <option value="RS"> Rio Grande do Sul </option>
+          <option value="SC"> Santa Catarina </option>
+          <option value="SE"> Sergipe </option>
+          <option value="SP"> São Paulo </option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">Escolha a cidade</label>
+        <select id="cidade">
+          <option value="">Selecione um estado primeiro</option>
+        </select>  
+      </div>
+
+      <div class="col-md-12">
+        <label for="validationCustom01" class="form-label">Houve envouvimento de alguma entidade?</label>
+        <input type="text" class="form-control" id="identidade" value="" placeholder="opcional" required="">
+      </div>
+
+      <h2> Dados do adotado </h2>
+      <div class="col-md-9">
+        <label for="validationCustom01" class="form-label">Nome completo do adotado</label>
+        <input type="text" class="form-control" id="nome_adotado" value="" placeholder="Informe seu nome" required="">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Sexo</label>
+        <select class="form-select" id="sexo_adotado" required="">
+          <option >Masculino</option>
+          <option >Feminino</option>
+          <option>Outro</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">Nome do pai biológico</label>
+        <input type="text" class="form-control" id="pai_bio" value="" placeholder="nome do pai biologico" required="">
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">Nome da mãe biológica</label>
+        <input type="text" class="form-control" id="mae_bio" value="" placeholder="nome da mãe biologica" required="">
+      </div>
+      <div class="col-md-12" id="just">
+        <label for="validationCustom01" class="form-label">Justificativa</label>
+        <textarea rows="6" cols="50"> </textarea>
+      </div>
+      <div class="col-12" id="confirme">
+        <button class="btn btn-primary" type="submit">Confirmar</button>
+      </div>
+
     </form>
-    <div class="col-md-12">
-      <label for="validationCustom01" class="form-label">Pais de destino</label>
-      <input type="text" class="form-control" id="pais" value="" placeholder="Informe o pais" required="">
-    </div>
-  <div class="col-md-12" id="obs">
-    <label for="validationCustom01" class="form-label">Observação</label>
-    <textarea rows="6" cols="50"> </textarea>
-  </div>
-  <div class="col-md-12">
-    <label for="validationCustom01" class="form-label">Nome do juiz de adoção</label>
-    <input type="text" class="form-control" id="juiz" value="" placeholder="Informe o juiz responsavel" required="">
-  </div>
-  <div class="col-md-12">
-    <label for="validationCustom01" class="form-label">Vara da infancia e juventude</label>
-    <input type="text" class="form-control" id="vara" value="" placeholder="Informe a vara da infancia e juventude" required="">
-  </div>
-  <div class="col-md-12">
-    <label for="validationCustom01" class="form-label">Nome da assistente social</label>
-    <input type="text" class="form-control" id="social" value="" placeholder="Informe o nome da assistente social" required="">
-  </div>
-
-  <div class="col-md-4" id=data_ado>
-    <labelfor="validationCustom01" class="form-label">Data da consesão da adoção</label>
-    <select name="dia">
-      <option value="">Dia</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
-      <option value="18">18</option>
-      <option value="19">19</option>
-      <option value="20">20</option>
-      <option value="21">21</option>
-      <option value="22">22</option>
-      <option value="23">23</option>
-      <option value="24">24</option>
-      <option value="25">25</option>
-      <option value="26">26</option>
-      <option value="27">27</option>
-      <option value="28">28</option>
-      <option value="29">29</option>
-      <option value="30">30</option>
-      <option value="31">31</option>
-
-    </select>
-    
-    <select name="mes">
-      <option value="">Mês</option>
-      <option value="1">Janeiro</option>
-      <option value="2">Fevereiro</option>
-      <option value="3">Março</option>
-      <option value="4">Abril</option>
-      <option value="5">Maio</option>
-      <option value="6">Junho</option>
-      <option value="7">Julho</option>
-      <option value="8">Agosto</option>
-      <option value="9">Setembro</option>
-      <option value="10">Outubro</option>
-      <option value="11">Novembro</option>
-      <option value="12">Dezembro</option>
-    </select>
-    
-    <select name="ano">
-      <option value="">Ano</option>
-      <option value="2023">2023</option>
-      <option value="2022">2022</option>
-      <option value="2021">2021</option>
-      <option value="2020">2020</option>
-      <option value="2019">2019</option>
-    </select>
-  </div>
-
-  <div class="col-md-6">
-    <label for="validationCustom01" class="form-label">Numero do processo</label>
-    <input type="text" class="form-control" id="processo" value="" placeholder="Informe 0 numero do processo" required="">
-  </div>
-
-  <div class="col-md-6">
-    <label for="validationCustom01" class="form-label">Escolha o estado</label>
-    <select id="estado" onchange="selecionarEstado(this.value)">
-      <option value="">Selecione um estado</option>
-      <option value="AC"> Acre </option>
-      <option value="AL"> Alagoas </option>
-      <option value="AM"> Amazonas </option>
-      <option value="AP"> Amapa </option>
-      <option value="BA"> Bahia </option>
-      <option value="CE"> Cecife </option>
-      <option value="GO"> Goias </option>
-      <option value="MA"> Manaus </option>
-      <option value="MG"> Minas Gerais </option>
-      <option value="MS"> Mato Grosso do Sul </option>
-      <option value="MT"> Mato Grosso </option>
-      <option value="PA"> Pará </option>
-      <option value="PB"> Paraiba </option>
-      <option value="PE"> Pernambuco </option>
-      <option value="PI"> Piaui </option>
-      <option value="PR"> Parana </option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="RN"> Rio Grande do Norte </option>
-      <option value="RO"> Roraima </option>
-      <option value="RS"> Rio Grande do Sul </option>
-      <option value="SC"> Santa Catarina </option>
-      <option value="SE"> Sergipe </option>
-      <option value="SP"> São Paulo </option>
-      <option value="TO">Tocantins</option>
-    </select>
-  </div>
-
-  <div class="col-md-6">
-    <label for="validationCustom01" class="form-label">Escolha a cidade</label>
-    <select id="cidade">
-      <option value="">Selecione um estado primeiro</option>
-    </select>  
-  </div>
-  <div class="col-md-12">
-    <label for="validationCustom01" class="form-label">Houve envouvimento de alguma entidade?</label>
-    <input type="text" class="form-control" id="identidade" value="" placeholder="opcional" required="">
-  </div>
-
-  <h2> Dados do adotado </h2>
-  <div class="col-md-9">
-    <label for="validationCustom01" class="form-label">Nome completo do adotado</label>
-    <input type="text" class="form-control" id="nome_adotado" value="" placeholder="Informe seu nome" required="">
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-</div>
-<div class="col-md-3">
-<label for="validationCustom04" class="form-label">Sexo</label>
-<select class="form-select" id="sexo_adotado" required="">
-  <option >Masculino</option>
-  <option >Feminino</option>
-  <option>Outro</option>
-</select>
-<div class="col-md-6">
-  <label for="validationCustom01" class="form-label">Nome do pai biológico</label>
-  <input type="text" class="form-control" id="pai_bio" value="" placeholder="nome do pai biologico" required="">
-</div>
-<div class="col-md-6">
-  <label for="validationCustom01" class="form-label">Nome da mãe biológica</label>
-  <input type="text" class="form-control" id="mae_bio" value="" placeholder="nome da mãe biologica" required="">
-</div>
-<div class="col-md-12" id="just">
-  <label for="validationCustom01" class="form-label">Justificativa</label>
-  <textarea rows="6" cols="50"> </textarea>
-</div>
-<div class="col-12" id="confirme">
-  <button class="btn btn-primary" type="submit">Confirmar</button>
-</div>
-  </body>
+  </main>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
